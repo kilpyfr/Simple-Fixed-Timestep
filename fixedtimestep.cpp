@@ -8,7 +8,7 @@ int main() {
    bool quit = false;
    std::chrono::steady_clock::time_point current_time = std::chrono::steady_clock::now();
   
-   size_t current_frame = 0;
+   std::size_t current_frame = 0;
    while (!quit) {
       std::chrono::steady_clock::time_point new_time = std::chrono::steady_clock::now();
        float dur_seconds = std::chrono::duration<float>(new_time - current_time).count();
